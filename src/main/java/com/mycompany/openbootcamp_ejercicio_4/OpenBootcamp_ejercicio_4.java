@@ -14,7 +14,8 @@ public class OpenBootcamp_ejercicio_4 {
 
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-   int salir=1;
+  // int salir=1;
+   String menu="1";
     
     do {
         System.out.println("Ingresa un numero: ");
@@ -67,8 +68,8 @@ for (int numeroFor = 0; numeroFor <= 3; numeroFor++) {
             default: System.out.println("Solo puede teclear 1,2,3 o 4 ");
         } 
         System.out.println("Para repetir el proceso presione 1");
-        System.out.println("Para salir presione cualquier otro numero");
-         salir=sc.nextInt();
-    }while(salir==1);
+        System.out.println("Para salir presione cualquier otra tecla");
+         menu=sc.next();
+    }while(menu.equals("1"));
     }
 }
